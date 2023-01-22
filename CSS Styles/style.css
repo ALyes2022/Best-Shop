@@ -410,3 +410,195 @@ ul {
   text-decoration: none;
   color: var(--color-white);
 }
+
+.pricing-container1 ul :first-child:before {
+  content: url('../images/Ckechmark-1.svg');
+  margin-right: 15px;
+}
+.pricing-container1 ul :nth-child(2):before {
+  content: url('../images/Ckechmark-1.svg');
+  margin-right: 15px;
+}
+.pricing-container1 ul :nth-child(3):before {
+  content: url('../images/Ckechmark-1.svg');
+  margin-right: 15px;
+}
+.pricing-container1 ul :nth-child(4):before {
+  content: url('../images/Close.svg');
+  margin-right: 15px;
+}
+.pricing-container1 ul :last-child:before {
+  content: url('../images/Close.svg');
+  margin-right: 15px;
+}
+.pricing-container2 ul :first-child:before {
+  content: url('../images/Ckechmark-1.svg');
+  margin-right: 15px;
+}
+.pricing-container2 ul :nth-child(2):before {
+  content: url('../images/Ckechmark-1.svg');
+  margin-right: 15px;
+}
+.pricing-container2 ul :nth-child(3):before {
+  content: url('../images/Ckechmark-1.svg');
+  margin-right: 15px;
+}
+.pricing-container2 ul :nth-child(4):before {
+  content: url('../images/Ckechmark-1.svg');
+  margin-right: 15px;
+}
+.pricing-container2 ul :last-child:before {
+  content: url('../images/Close.svg');
+  margin-right: 15px;
+}
+.pricing-container3 ul :first-child:before {
+  content: url('../images/Ckechmark-1.svg');
+  margin-right: 15px;
+}
+.pricing-container3 ul :nth-child(2):before {
+  content: url('../images/Ckechmark-1.svg');
+  margin-right: 15px;
+}
+.pricing-container3 ul :nth-child(3):before {
+  content: url('../images/Ckechmark-1.svg');
+  margin-right: 15px;
+}
+.pricing-container3 ul :nth-child(4):before {
+  content: url('../images/Ckechmark-1.svg');
+  margin-right: 15px;
+}
+.pricing-container3 ul :last-child:before {
+  content: url('../images/Ckechmark-1.svg');
+  margin-right: 15px;
+}
+
+/* contact section */
+
+.contact-section {
+  margin-top: 171px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container {
+  width: 896px;
+  height: 376px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.form {
+  width: 400px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.name-email-input {
+  width: 440px;
+  height: 157px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+.TC {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.TC p {
+  width: 405px;
+  height: 108px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+.name-email-input input {
+  border: none;
+  border-bottom: var(--color-grey) 1px solid;
+  width: 100%;
+}
+.name-email-input label {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  font-family: var(--font-family-open-sans);
+  font-weight: var(--font-weight-light);
+}
+
+.left-section {
+  width: 342px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+.contact-details {
+  width: 342px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-section h2 {
+  font-size: 48px;
+  font-family: var(--font-family-raleway);
+}
+
+.left-section p {
+  font-size: 16px;
+  font-family: var(--font-family-open-sans);
+}
+input[type='checkbox'] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: var(--color-grey) 2px solid;
+}
+.checkbox:checked::after {
+  content: url('../images/Checkmark.svg');
+  position: relative;
+  margin-left: 3px;
+}
+
+/* Footer section */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-light-grey);
+  box-shadow: 0px -5px 40px #00000029;
+}
+.footer-container {
+  width: 1626px;
+  height: 89px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-side-footer {
+  width: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-side-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.trademark {
+  font-size: 11px;
+  font-family: var(--font-family-open-sans);
+  color: var(--color-grey);
+}
