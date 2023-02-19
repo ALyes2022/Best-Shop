@@ -1,0 +1,174 @@
+@import '../settings/fonts';
+@import '../settings/colors';
+@import '../settings/mixins';
+
+.benefit-section {
+  width: 100%;
+  height: 1395px;
+  background-color: $color-light-grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.box-container1 {
+  background-color: $color-white;
+  width: 1124px;
+  height: 370px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.box-container2 {
+  background-color: $color-white;
+  width: 1124px;
+  height: 370px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.text-container {
+  width: 416px;
+  height: 188px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.border1 {
+  width: 328px;
+  border: 3px solid $color-redish;
+}
+.border2 {
+  width: 328px;
+  border: 3px solid $color-primary;
+}
+.border3 {
+  width: 328px;
+  border: 3px solid $color-green;
+}
+
+.shape__1 {
+  width: 190px;
+  height: 190px;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  background-color: $color-redish;
+  border-radius: 41px;
+}
+.shape__2 {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background-color: $color-primary;
+}
+.img-container1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.img-container2 {
+  @include flex-center;
+}
+.img-container3 {
+  @include flex-center;
+}
+.trumpet__background {
+  width: 440px;
+  height: 370px;
+  background-color: $color-green;
+}
+
+.box__container-splited {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 623px;
+  height: 370px;
+  background-color: $color-white;
+}
+
+.main-container {
+  @include mobile {
+    @for $i from 1 through 2 {
+      .box-container#{$i} {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    .img-container2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .img-container1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box__container-splited {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+    @for $i from 1 through 3 {
+      .img-container#{$i} {
+        img {
+          margin-top: 10px;
+          width: 80vw;
+        }
+      }
+    }
+    .shape__1 {
+      width: 170px;
+      height: 170px;
+      margin-top: 20px;
+      margin-right: 60px;
+      margin-bottom: 50px;
+    }
+    .shape__2 {
+      width: 200px;
+      height: 200px;
+    }
+
+    .trumpet__background {
+      width: 314px;
+      height: 195px;
+    }
+    .text-container {
+      p {
+        max-width: 314px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+    }
+    margin-top: 100px;
+  }
+}

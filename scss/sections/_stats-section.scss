@@ -1,0 +1,86 @@
+@import '../settings/fonts';
+@import '../settings/colors';
+@import '../settings/mixins';
+
+.stats-section {
+  width: 100%;
+  height: 531px;
+  gap: 70px;
+  @include flex-center;
+  flex-direction: column;
+
+  font-family: $font-family-raleway;
+  font-weight: $font-weight-lighter;
+  font-size: 36px;
+  color: $color-black;
+}
+.title {
+  color: $color-grey;
+  font-size: 16px;
+}
+.numbers {
+  color: $color-black;
+  font-weight: $font-weight-bold;
+  letter-spacing: 5.96px;
+  font-size: 24px;
+}
+
+.content {
+  width: 1626px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.shape1 {
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  background-color: $color-redish;
+}
+.shape2 {
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  background-color: $color-primary;
+}
+.shape3 {
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  background-color: $color-green;
+}
+.section-container {
+  @include flex-center;
+  flex-direction: column;
+
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.container__img-and-shape {
+  @include flex-center;
+}
+.img {
+  position: absolute;
+  margin-left: 50px;
+  z-index: 1;
+}
+
+.content {
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.stats-section {
+  @include mobile {
+    margin-top: 200px;
+    .header {
+      margin-top: 70px;
+      text-align: center;
+      font-size: 2rem;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import '../settings/fonts';
+@import '../settings/colors';
+@import '../settings/mixins';
+
+.footer {
+  @include flex-center;
+  background-color: $color-light-grey;
+  box-shadow: 0px -5px 40px #00000029;
+}
+.footer-container {
+  width: 1626px;
+  height: 89px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-side-footer {
+  width: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-side-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.trademark {
+  font-size: 11px;
+  font-family: $font-family-open-sans;
+  color: $color-grey;
+}

@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>BestShop</title>
-    <link rel="stylesheet" href="./CSS Styles/reset.css" />
-    <link rel="stylesheet" href="./CSS Styles/style.css" />
+    <!-- <link rel="stylesheet" href="./CSS Styles/reset.css" />
+    <link rel="stylesheet" href="./CSS Styles/style.css" /> -->
+    <link rel="stylesheet" href="./scss/main.scss" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,9 +34,27 @@
     <header>
       <div class="container">
         <!-- logo -->
+        <div class="nav-mobile">
+          <input id="menu-checkbox" type="checkbox" />
+          <label for="menu-checkbox">
+            <div class="humburger">
+              <div class="line-1"></div>
+              <div class="line-2"></div>
+              <div class="line-3"></div>
+            </div>
+            <span class="cross">X</span>
+          </label>
+          <ul class="links">
+            <li><a href="#stats-section">why us</a></li>
+            <li><a href="#benefit-section">benefits</a></li>
+            <li><a href="#pricing-section">prices</a></li>
+            <li><a href="#contact-section">contact</a></li>
+          </ul>
+        </div>
         <div class="logo">
           <p>BestShop</p>
         </div>
+
         <div class="list-container">
           <nav class="navigation-list">
             <ul class="nav-list">
@@ -51,9 +77,7 @@
         </div>
         <p>Open shop on our platform and increase your sales</p>
         <button class="button"><a href="">Open your shop</a></button>
-        <div>
-          <img src="../images/Background.png" alt="laptop-picture" />
-        </div>
+        <div class="bg-img"></div>
       </div>
     </section>
 
@@ -107,7 +131,7 @@
           </div>
           <div class="img-container1">
             <img src="./images/Macbook2.png" alt="Macbook" class="img" />
-            <div class="shape__macbook"></div>
+            <div class="shape__1"></div>
           </div>
         </div>
 
@@ -123,7 +147,7 @@
           </div>
           <div class="img-container2">
             <img src="./images/iPhone2.png" alt="Iphone" class="img" />
-            <div class="shape__iphone"></div>
+            <div class="shape__2"></div>
           </div>
         </div>
 
@@ -151,6 +175,7 @@
     <!-- Pricing section -->
 
     <section class="pricing-section" id="pricing-section">
+      <h2>Pricing</h2>
       <div class="main__pricing-container">
         <div class="pricing-container1">
           <h3>Basic</h3>
@@ -212,16 +237,21 @@
           <h2>Any questions?</h2>
           <p>Leave your email address or call us!</p>
           <div class="contact-details">
-            <img src="./images/Mail Icon.svg" alt="mail" />
-            <p>info@bestshop.xyz</p>
-            <img src="./images/Phone Icon.svg" alt="phone" />
-            <p>123 456 789</p>
+            <div class="ctc-mail">
+              <img src="./images/Mail Icon.svg" alt="mail" />
+              <p>info@bestshop.xyz</p>
+            </div>
+            <div class="ctc-phone">
+              <img src="./images/Phone Icon.svg" alt="phone" />
+              <p>123 456 789</p>
+            </div>
           </div>
         </div>
         <div class="form">
           <div class="name-email-input">
             <label for="Name">name</label>
             <input type="text" />
+
             <label for="email">email</label>
             <input type="text" />
           </div>
@@ -257,7 +287,7 @@
           <div>
             <a href="">
               <img
-                src="../images/Facebook.svg"
+                src="./images/Facebook.svg"
                 width="24"
                 height="24"
                 alt="Facebook"
@@ -267,7 +297,7 @@
           <div>
             <a href="">
               <img
-                src="../images/Twitter.svg"
+                src="./images/Twitter.svg"
                 width="24"
                 height="24"
                 alt="Twitter"
