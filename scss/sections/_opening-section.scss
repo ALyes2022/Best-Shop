@@ -1,0 +1,87 @@
+@import '../settings/fonts';
+@import '../settings/colors';
+@import '../settings/mixins';
+
+.opening-section {
+  width: 100%;
+  height: 720px;
+  @include flex-center;
+  margin-top: 130px;
+  font-size: 10px;
+}
+.opening-section .container {
+  width: 1626px;
+  height: 712px;
+  @include flex-center;
+  flex-direction: column;
+
+  gap: 20px;
+  font-family: $font-family-open-sans;
+  font-weight: $font-weight-lighter;
+  font-size: 16px;
+}
+
+.button {
+  padding: 23px 157px 22px 157px;
+  background-color: $color-primary;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 5px 10px 14px #07ace629;
+}
+.button a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: $color-white;
+  font-family: $font-family-open-sans;
+  font-weight: $font-weight-bold;
+}
+.header1 {
+  font-family: $font-family-raleway;
+  font-weight: $font-weight-lighter;
+  font-size: 4rem;
+  text-transform: capitalize;
+}
+.bg-img {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/images/Background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  aspect-ratio: 16/9;
+}
+
+.opening-section {
+  @include mobile {
+    .header {
+      font-size: 1rem;
+    }
+    p {
+      text-align: center;
+      font-size: 1rem;
+    }
+    .bg-img {
+      margin-top: 50px;
+
+      background-size: auto;
+      aspect-ratio: 16/9;
+    }
+
+    .button {
+      padding: 11px 75px 11px 75px;
+      width: 80vw;
+      height: 67px;
+      a {
+        font-size: 1rem;
+      }
+    }
+  }
+  width: 100vw;
+  height: 100vh;
+
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // flex-wrap: nowrap;
+}

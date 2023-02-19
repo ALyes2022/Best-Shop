@@ -1,0 +1,207 @@
+@import '../settings/fonts';
+@import '../settings/colors';
+@import '../settings/mixins';
+
+.pricing-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: $font-family-open-sans;
+  font-size: 36px;
+}
+.main__pricing-container {
+  width: 1266px;
+  height: 616px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-items {
+  list-style: none;
+  font-size: 14px;
+  font-family: $font-family-open-sans;
+  font-weight: $font-weight-light;
+}
+
+.pricing-container1,
+.pricing-container2,
+.pricing-container3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 100px; */
+}
+.pricing-container1,
+.pricing-container3 {
+  width: 372px;
+  height: 461px;
+}
+.pricing-container2 {
+  width: 405px;
+  height: 500px;
+}
+.pricing-container1 {
+  @include pricing-container($color-redish);
+}
+.pricing-container2 {
+  @include pricing-container($color-primary);
+  box-shadow: 5px 10px 27px #07ace629;
+}
+.pricing-container3 {
+  @include pricing-container($color-green);
+}
+
+.begin1,
+.begin2,
+.begin3 {
+  border: 0px;
+  padding: 16px 57px;
+  border-radius: 23px;
+  font-size: 13px;
+  font-weight: $font-weight-bold;
+  font-family: $font-family-open-sans;
+  margin-bottom: -20px;
+}
+h3 {
+  margin-top: 30px;
+}
+ul {
+  line-height: 26px;
+  text-align: center;
+}
+.begin1 {
+  background-color: $color-redish;
+}
+.begin2 {
+  background-color: $color-primary;
+}
+.begin3 {
+  background-color: $color-green;
+}
+.price1,
+.price2,
+.price3 {
+  @include flex-center;
+  flex-direction: column;
+}
+.price1 {
+  color: $color-redish;
+  font-size: 46px;
+}
+.price2 :nth-child(1) {
+  color: $color-primary;
+  font-size: 46px;
+}
+.price3 :nth-child(1) {
+  color: $color-green;
+  font-size: 46px;
+}
+.price2 :nth-child(2) {
+  font-size: 12px;
+  font-weight: $font-weight-bold;
+  color: #13253b;
+}
+.price3 :nth-child(2) {
+  font-size: 12px;
+  font-weight: $font-weight-bold;
+  color: #13253b;
+}
+.button-begin a {
+  text-decoration: none;
+  color: $color-white;
+}
+
+.pricing-container1 ul :first-child:before {
+  content: url('../images/Ckechmark-1.svg');
+  margin-right: 15px;
+}
+.pricing-container1 ul :nth-child(2):before {
+  content: url('../images/Ckechmark-1.svg');
+  margin-right: 15px;
+}
+.pricing-container1 ul :nth-child(3):before {
+  content: url('../images/Ckechmark-1.svg');
+  margin-right: 15px;
+}
+.pricing-container1 ul :nth-child(4):before {
+  content: url('../images/Close.svg');
+  margin-right: 15px;
+}
+.pricing-container1 ul :last-child:before {
+  content: url('../images/Close.svg');
+  margin-right: 15px;
+}
+.pricing-container2 ul :first-child:before {
+  content: url('../images/Ckechmark-1.svg');
+  margin-right: 15px;
+}
+.pricing-container2 ul :nth-child(2):before {
+  content: url('../images/Ckechmark-1.svg');
+  margin-right: 15px;
+}
+.pricing-container2 ul :nth-child(3):before {
+  content: url('../images/Ckechmark-1.svg');
+  margin-right: 15px;
+}
+.pricing-container2 ul :nth-child(4):before {
+  content: url('../images/Ckechmark-1.svg');
+  margin-right: 15px;
+}
+.pricing-container2 ul :last-child:before {
+  content: url('../images/Close.svg');
+  margin-right: 15px;
+}
+.pricing-container3 ul :first-child:before {
+  content: url('../images/Ckechmark-1.svg');
+  margin-right: 15px;
+}
+.pricing-container3 ul :nth-child(2):before {
+  content: url('../images/Ckechmark-1.svg');
+  margin-right: 15px;
+}
+.pricing-container3 ul :nth-child(3):before {
+  content: url('../images/Ckechmark-1.svg');
+  margin-right: 15px;
+}
+.pricing-container3 ul :nth-child(4):before {
+  content: url('../images/Ckechmark-1.svg');
+  margin-right: 15px;
+}
+.pricing-container3 ul :last-child:before {
+  content: url('../images/Ckechmark-1.svg');
+  margin-right: 15px;
+}
+.pricing-section {
+  @include mobile {
+    h2 {
+      margin-bottom: 150px;
+    }
+  }
+
+  .main__pricing-container {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 70px;
+    }
+    @include mobile {
+      .pricing-container1 {
+        width: 80vw;
+      }
+      .pricing-container2 {
+        width: 90vw;
+      }
+      .pricing-container3 {
+        width: 80vw;
+      }
+    }
+  }
+
+  height: 1200px;
+}
